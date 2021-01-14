@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "clean": "rm -rf build && cd templates && rm -rf _site && rm -rf .jekyll-cache",
+    "build": "npm run clean && npm run dev:cms && npm run build:templates && npm run minify-html && npm run build:themes && npm run build:components",
+    "dev": "concurrently \"npm run dev:cms\" \"npm run dev:themes\" \"npm run dev:components\" \"npm run dev:templates\"",
+    "dev:cms": "cd cms && npm run start",
+    "dev:components": "cd components && npm run start",
+    "dev:templates": "cd templates && jekyll serve --livereload",
+    "dev:themes": "cd themes && npm run start",
+    "build:cms": "cd cms && npm run start",
+    "build:components": "cd components && npm run build",
+    "build:templates": "cd templates && jekyll build",
+    "build:themes": "cd themes && npm run build",
+    "minify-html": "html-minifier --input-dir templates/_site --output-dir build --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true",
+    "quick-install": "concurrently \"npm i\" \"cd cms && npm i\" \"cd components && npm i\" \"cd templates && bundle install\" \"cd themes && npm i\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "5.3.0",
+    "html-minifier": "4.0.0"
+  }
+}

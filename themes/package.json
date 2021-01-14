@@ -1,0 +1,22 @@
+{
+  "name": "website-themes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development postcss ./css/styles.css -o ../templates/assets/css/styles.css",
+    "build": "NODE_ENV=production postcss ./css/styles.css -o ../build/assets/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "10.0.x",
+    "cssnano": "4.1.x",
+    "postcss": "8.1.x",
+    "postcss-cli": "8.3.x",
+    "postcss-import": "13.0.x",
+    "tailwindcss": "2.0.x"
+  }
+}

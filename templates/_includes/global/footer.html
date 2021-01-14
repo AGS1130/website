@@ -1,0 +1,22 @@
+{% assign github = "https://github.com/ags1130" %}
+
+<footer class="bg-darkShade-dark">
+  <section
+    class="flex container flex-col text-center justify-center self-center py-8 text-lightShade"
+  >
+    &copy; {{ "now" | date: "%Y" }} Built by Gregory Salinas.
+    <br />
+    All rights reserved.
+    <br />
+    <a href="{{ github }}"> GitHub Repository </a>
+    <br />
+    <span>Last build: {{ "now" | date: "%m/%d/%Y" }}</span>
+  </section>
+  <section class="flex container text-center justify-center pb-8 self-center">
+    {% for socialLink in site.data.footer %}
+    <a href="{{ socialLink.link }}">
+      <i class="{{ socialLink.icon }}">{{ socialLink.name }}</i>
+    </a>
+    {% endfor %}
+  </section>
+</footer>

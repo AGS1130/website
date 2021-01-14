@@ -1,0 +1,35 @@
+<article class="rounded mb-6 bg-darkShade-light {{ include.class }}">
+  <div class="cursor-default relative">
+    <img
+      class="w-full object-cover rounded-t max-h-80"
+      src="{{ include.backgroundImage.url }}"
+      alt="{{ include.backgroundImage.alt }}"
+    />
+    <a
+      href="{{ include.url }}"
+      class="absolute overflow-hidden inset-0 w-full h-full transition ease-in-out duration-500 bg-white bg-opacity-0 hover:bg-opacity-10"
+    >
+    </a>
+  </div>
+  <div class="p-6 mx-6">
+    {% for tag in include.tags %}
+      <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}">#{{ tag }}</a>
+   {% endfor %}
+    <h3 class="text-3xl mb-3">
+      <strong>{{ include.title }}</strong>
+    </h3>
+    <hr class="my-4" />
+    <p>{{ include.description }}</p>
+    <p class="font-small font-weight-bold mb-1">
+      <i class="far fa-clock-o"></i> {{ include.date | date: "%b %d, %Y" }}
+    </p>
+    <p class="text-right mb-0">
+      <a href="{{ include.url | prepend: site.baseurl }}">
+        <strong>
+          READ MORE
+          <i class="fas fa-chevron-right" aria-hidden="true"></i>
+        </strong>
+      </a>
+    </p>
+  </div>
+</article>

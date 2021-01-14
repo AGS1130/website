@@ -1,0 +1,53 @@
+{% assign limit = 5 %}
+{%- comment -%} https://codepen.io/jh3y/pen/WwVKLN {%- endcomment -%}
+<section class="rounded mb-6 bg-white shadow-md">
+  <div class="p-5">
+    <p class="text-center bg-gray-100 py-2 mb-4">
+      <strong>POPULAR</strong>
+    </p>
+
+    <ul class="text-center h-32 overflow-hidden relative">
+      {% for popularArticle in site.data.popularArticles %}
+        <input
+          class="carousel__activator hidden"
+          type="radio"
+          id="{{ forloop.index }}"
+          name="activator"
+          {% if forloop.index == 1 %} checked="checked" {% endif %}
+        />
+      {% endfor %}
+      {% for popularArticle in site.data.popularArticles %}
+        <div class="carousel__controls hidden">
+          <label
+            class="carousel__control h-8 w-8 top-1/2 absolute block transition ease-in-out duration-500 cursor-pointer z-10 outline-none -mt-4 border-solid border-gray-100 opacity-75 hover:opacity-100 carousel__control--backward"
+            for="{% if forloop.index == 1 %}{{ forloop.length }}{% else %}{{ forloop.index | minus: 1 }}{% endif  %}">
+          </label>
+          <label
+            class="carousel__control h-8 w-8 top-1/2 absolute block transition ease-in-out duration-500 cursor-pointer z-10 outline-none -mt-4 border-solid border-gray-100 opacity-75 hover:opacity-100 carousel__control--forward"
+            for="{% if forloop.index == forloop.length %}{{ 1 }}{% else %}{{ forloop.index | plus: 1 }}{% endif  %}">
+          </label>
+        </div>
+      {% endfor %}
+      {% for popularArticle in site.data.popularArticles %}
+        <li class="carousel__slide absolute h-full overflow-hidden opacity-0">
+          <img
+            class="w-full h-full object-cover rounded object-center"
+            src="{{ popularArticle.backgroundImage.url }}"
+            alt="{{ popularArticle.backgroundImage.alt }}"
+          />
+          <a
+            href="{{ site.baseurl }}/{{ popularArticle.permalink }}"
+            class="absolute overflow-hidden inset-0 w-full h-full transition ease-in-out duration-500 bg-white bg-opacity-0 hover:bg-opacity-10"
+          >
+            <h1>{{ popularArticle.title }}</h1>
+          </a>
+        </li>
+      {% endfor %}
+      <div class="carousel__indicators bottom-0 absolute w-full text-center">
+        {% for popularArticle in site.data.popularArticles %}
+          <label class="carousel__indicator h-4 w-4 rounded-full inline-block z-10 transition ease-in-out duration-500 cursor-pointer my-0 mx-1 bg-gray-100 opacity-75 hover:opacity-100" for="{{ forloop.index }}"></label>
+        {% endfor %}
+      </div>
+    </ul>
+  </div>
+</section>

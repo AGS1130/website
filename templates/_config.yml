@@ -1,0 +1,30 @@
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num.html'
+  title: ':title - page :num'
+  sort_reverse: true
+  indexpage: 'index'
+
+autopages:
+  enabled: true
+  tags:
+    enabled: true
+    title: 'Posts tagged with :tag'
+    layouts:
+      - collection.html
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+
+jekyll-archives:
+  enabled:
+    # - year # Uncomment when more than a 3+ years worth of content has been published
+    - month
+  layouts:
+    # year: archives # Uncomment when more than a 3+ years worth of content has been published
+    month: collection
+  permalinks:
+    # year: '/archives/year/:year/' # Uncomment when more than a 3+ years worth of content has been published
+    month: '/archives/:year-:month/' # '/archives/month/:year-:month/' when more than a 3+ years worth of content has been published

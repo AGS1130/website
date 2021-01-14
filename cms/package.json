@@ -1,0 +1,19 @@
+{
+  "name": "website-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run preview",
+    "start": "npm run fetch",
+    "fetch": "./node_modules/.bin/dato dump",
+    "preview": "./node_modules/.bin/dato dump --preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "datocms-client": "^3.2.0",
+    "html-tag": "^2.0.0"
+  }
+}

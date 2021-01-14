@@ -1,0 +1,29 @@
+<section class="rounded mb-6 bg-white shadow-md">
+  <div class="p-5">
+    <p class="text-center bg-gray-100 py-2 mb-4">
+      <strong>TAGS</strong>
+    </p>
+
+    <ul class="w-full border rounded mt-6 mb-3">
+      {% for objTag in site.tags %}
+        {% assign tagKey = objTag[0] %}
+        <li class="{% unless forloop.index == 1 %} border-t {% endunless %} py-3 px-5">
+          <a
+            class="flex justify-between"
+            href="{{ site.baseurl }}/tag/{{ tagKey | downcase }}">
+            <p class="mb-0">#{{ tagKey }}</p>
+            {% for tag in site.data.tagsMap %}
+              {% if tag.name == tagKey %}
+                <img
+                width="24"
+                height="24"
+                src="{{ tag.image.url }}"
+                alt="{{ tag.image.alt }}"/>
+              {% endif %}
+            {% endfor %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

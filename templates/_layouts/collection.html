@@ -1,0 +1,51 @@
+---
+pagination:
+  per_page: 999
+---
+
+<!DOCTYPE html>
+<html class="bg-darkShade">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="min-h-screen bg-gray-100 relative">
+      {% include global/hero.html %}
+      <section class="container max-w-screen-xl mx-auto px-4">
+        <div class="my-5"></div>
+        <div class="flex flex-wrap justify-start lg:flex-row flex-col pt-3">
+          {%- comment -%} Articles {%- endcomment -%}
+          {% if page.type and page.type == 'month' %}
+            {% assign posts = page.posts %}
+          {% else %}
+            {% assign posts = paginator.posts %}
+          {% endif %}
+
+          {%- comment -%} Articles {%- endcomment -%}
+          {% for post in posts %}
+            {% assign evenMod = forloop.index | modulo: 2 %}
+            {% assign margins = "flex-grow-0 flex-shrink-0 w-full lg:w-1/3 mx-0" %}
+
+            {% if evenMod == 0 %}
+              {% assign margins =  margins | append: " lg:mx-16" %}
+            {% endif %}
+
+            {% include global/card.html
+              backgroundImage=post.backgroundImage
+              class=margins
+              url=post.url
+              tags=post.tags
+              date=post.date
+              title=post.title
+              description=post.description
+            %}
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+    {% include global/footer.html %}
+  </body>
+</html>

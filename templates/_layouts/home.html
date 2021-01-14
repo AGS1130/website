@@ -1,0 +1,45 @@
+---
+layout: default
+pagination:
+  enabled: true
+---
+
+{% include global/hero.html %}
+<section class="container max-w-screen-xl mx-auto px-4">
+  <div class="my-5"></div>
+  <div class="flex lg:flex-row flex-col pt-3">
+    {%- comment -%} Articles {%- endcomment -%}
+    <div class="flex-grow-0 flex-shrink-0 w-full px-4 lg:w-2/3 lg:mx-6">
+      <div class="pb-4">
+        {% for post in paginator.posts %}
+          {% include global/card.html
+            backgroundImage=post.backgroundImage
+            url=post.url
+            tags=post.tags
+            date=post.date
+            title=post.title
+            description=post.description
+          %}
+        {% endfor %}
+      </div>
+      {% if paginator.total_pages and paginator.total_pages > 1 %}
+        <nav class="mb-5 pb-2">
+          {% include home/pagination.html %}
+        </nav>
+      {% endif %}
+    </div>
+    {%- comment -%} Side Utilities {%- endcomment -%}
+    <div class="flex-grow-0 flex-shrink-0 w-full px-4 lg:w-1/4">
+      {% include home/brand.html %}
+      {%- comment -%}
+
+      <!-- Un-comment after 10+ articles -->
+      {% include home/search.html %}
+      {% include home/popular.html %}
+      {% include home/archive.html %}
+      {% include home/tags.html %}
+
+      {%- endcomment -%}
+    </div>
+  </div>
+</section>

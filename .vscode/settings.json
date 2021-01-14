@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.jekyll-cache": true,
+    "**/_site": false,
+    "**/_archives": true,
+    "**/_posts": true,
+    "**/_tags": true,
+    "**/build": false,
+    "**/assets": false,
+  }
+}

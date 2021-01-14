@@ -1,0 +1,24 @@
+<section class="rounded mb-6 bg-white shadow-md">
+  <div class="p-5">
+    <p class="text-center bg-gray-100 py-2 mb-4">
+      <strong>ARCHIVE</strong>
+    </p>
+
+    {%- comment -%} Archive List {%- endcomment -%}
+    <ul class="w-full text-center">
+      {% for archive in site.archives %}
+        {% if archive.type == "month" %}
+          <li class="{% unless forloop.index == 1 %} border-t {% endunless %} pt-3.5 pb-1.5">
+            <p class="mb-1">
+              <a
+                class="dark-grey-text"
+                href="{{ archive.url | prepend: site.baseurl }}">
+                {{ archive.date | date: "%B %Y" }}
+              </a>
+            </p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

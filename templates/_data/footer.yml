@@ -1,0 +1,9 @@
+- name: LinkedIn
+  icon: fab fa-linkedin-in
+  link: https://www.linkedin.com/in/ags1130/
+- name: Email
+  icon: fas fa-envelope
+  link: "mailto:ags1130@yahoo.com"
+- name: Github
+  icon: fab fa-github
+  link: https://github.com/ags1130

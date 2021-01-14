@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="bg-darkShade">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="{{ page.backgroundImage.url }}" alt="{{ page.backgroundImage.alt }}" />
+    </header>
+    <main class="min-h-screen bg-gray-100 relative">
+      {% for postData in page.postData %}
+      <br />
+      {{ postData | debug }}
+      <br />
+      {% endfor %}
+    </main>
+    {% include global/footer.html %}
+  </body>
+</html>

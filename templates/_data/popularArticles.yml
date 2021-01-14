@@ -1,0 +1,257 @@
+- title: Example
+  permalink: example
+  backgroundImage:
+    format: png
+    size: 831155
+    width: 1470
+    height: 1270
+    title: null
+    alt: I'm proud of you my boy
+    url: 'https://www.datocms-assets.com/37945/1606002639-proud-of-you.png'
+    customData: {}
+    focalPoint: null
+    copyright: null
+    tags: []
+    smartTags:
+      - head
+      - person
+      - face
+      - human
+    filename: null
+    basename: null
+    isImage: true
+    exifInfo: {}
+    mimeType: image/png
+    colors:
+      - red: 251
+        green: 249
+        blue: 106
+        rgb: 'rgb(251, 249, 106)'
+        alpha: 1
+        hex: '#fbf96a'
+      - red: 210
+        green: 207
+        blue: 175
+        rgb: 'rgb(210, 207, 175)'
+        alpha: 1
+        hex: '#d2cfaf'
+      - red: 173
+        green: 152
+        blue: 86
+        rgb: 'rgb(173, 152, 86)'
+        alpha: 1
+        hex: '#ad9856'
+      - red: 101
+        green: 83
+        blue: 41
+        rgb: 'rgb(101, 83, 41)'
+        alpha: 1
+        hex: '#655329'
+      - red: 251
+        green: 249
+        blue: 106
+        rgb: 'rgb(251, 249, 106)'
+        alpha: 1
+        hex: '#fbf96a'
+      - red: 74
+        green: 51
+        blue: 80
+        rgb: 'rgb(74, 51, 80)'
+        alpha: 1
+        hex: '#4a3350'
+    blurhash: 'LpOfS}GrMsS|?HOXRqj]N5jcorsl'
+    video:
+      muxPlaybackId: null
+      framerate: null
+      duration: null
+      streamingUrl: 'https://stream.mux.com/null.m3u8'
+      thumbnailUrl: 'https://image.mux.com/null/thumbnail.jpg'
+      mp4Url: null
+- title: First Article!
+  permalink: first-article
+  backgroundImage:
+    format: jpg
+    size: 1059368
+    width: 4331
+    height: 2333
+    title: null
+    alt: Keyboard
+    url: 'https://www.datocms-assets.com/37945/1606002079-default-bg.jpg'
+    customData: {}
+    focalPoint: null
+    copyright: null
+    tags: []
+    smartTags:
+      - hardware
+      - computer
+      - computer hardware
+      - electronics
+      - keyboard
+      - computer keyboard
+    filename: null
+    basename: null
+    isImage: true
+    exifInfo: {}
+    mimeType: image/jpeg
+    colors:
+      - red: 189
+        green: 189
+        blue: 189
+        rgb: 'rgb(189, 189, 189)'
+        alpha: 1
+        hex: '#bdbdbd'
+      - red: 66
+        green: 66
+        blue: 66
+        rgb: 'rgb(66, 66, 66)'
+        alpha: 1
+        hex: '#424242'
+      - red: 129
+        green: 129
+        blue: 129
+        rgb: 'rgb(129, 129, 129)'
+        alpha: 1
+        hex: '#818181'
+    blurhash: 'LD8gy-Rjt7WB%MofRjWB00ofWBj['
+    video:
+      muxPlaybackId: null
+      framerate: null
+      duration: null
+      streamingUrl: 'https://stream.mux.com/null.m3u8'
+      thumbnailUrl: 'https://image.mux.com/null/thumbnail.jpg'
+      mp4Url: null
+- title: Example Article
+  permalink: example-article
+  backgroundImage:
+    format: jpg
+    size: 837538
+    width: 7200
+    height: 3422
+    title: null
+    alt: Laptop
+    url: 'https://www.datocms-assets.com/37945/1606003213-cover-image.jpg'
+    customData: {}
+    focalPoint: null
+    copyright: null
+    tags: []
+    smartTags:
+      - electronics
+      - pc
+      - computer
+      - laptop
+      - keyboard
+      - computer keyboard
+      - hardware
+      - computer hardware
+    filename: null
+    basename: null
+    isImage: true
+    exifInfo: {}
+    mimeType: image/jpeg
+    colors:
+      - red: 200
+        green: 187
+        blue: 169
+        rgb: 'rgb(200, 187, 169)'
+        alpha: 1
+        hex: '#c8bba9'
+      - red: 61
+        green: 66
+        blue: 71
+        rgb: 'rgb(61, 66, 71)'
+        alpha: 1
+        hex: '#3d4247'
+      - red: 244
+        green: 255
+        blue: 255
+        rgb: 'rgb(244, 255, 255)'
+        alpha: 1
+        hex: '#f4ffff'
+      - red: 124
+        green: 131
+        blue: 134
+        rgb: 'rgb(124, 131, 134)'
+        alpha: 1
+        hex: '#7c8386'
+    blurhash: 'LiF68}t700M{xuofM{WB4nWB?bt7'
+    video:
+      muxPlaybackId: null
+      framerate: null
+      duration: null
+      streamingUrl: 'https://stream.mux.com/null.m3u8'
+      thumbnailUrl: 'https://image.mux.com/null/thumbnail.jpg'
+      mp4Url: null
+- title: Test Article
+  permalink: test-article
+  backgroundImage:
+    format: png
+    size: 628299
+    width: 760
+    height: 760
+    title: null
+    alt: Telephone Calls
+    url: 'https://www.datocms-assets.com/37945/1606003022-telephone-calls.png'
+    customData: {}
+    focalPoint: null
+    copyright: null
+    tags: []
+    smartTags:
+      - human
+      - person
+      - people
+      - sunglasses
+      - accessory
+      - accessories
+      - family
+      - advertisement
+      - poster
+    filename: null
+    basename: null
+    isImage: true
+    exifInfo: {}
+    mimeType: image/png
+    colors:
+      - red: 23
+        green: 163
+        blue: 164
+        rgb: 'rgb(23, 163, 164)'
+        alpha: 1
+        hex: '#17a3a4'
+      - red: 209
+        green: 164
+        blue: 170
+        rgb: 'rgb(209, 164, 170)'
+        alpha: 1
+        hex: '#d1a4aa'
+      - red: 161
+        green: 97
+        blue: 92
+        rgb: 'rgb(161, 97, 92)'
+        alpha: 1
+        hex: '#a1615c'
+      - red: 19
+        green: 115
+        blue: 111
+        rgb: 'rgb(19, 115, 111)'
+        alpha: 1
+        hex: '#13736f'
+      - red: 228
+        green: 148
+        blue: 156
+        rgb: 'rgb(228, 148, 156)'
+        alpha: 1
+        hex: '#e4949c'
+      - red: 60
+        green: 90
+        blue: 123
+        rgb: 'rgb(60, 90, 123)'
+        alpha: 1
+        hex: '#3c5a7b'
+    blurhash: 'LBA^Oh}uI]5ko}R*jbxa1P5Qng^Q'
+    video:
+      muxPlaybackId: null
+      framerate: null
+      duration: null
+      streamingUrl: 'https://stream.mux.com/null.m3u8'
+      thumbnailUrl: 'https://image.mux.com/null/thumbnail.jpg'
+      mp4Url: null

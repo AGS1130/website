@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+_site
+_archives
+_posts
+_tags
+.env
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+build
+assets

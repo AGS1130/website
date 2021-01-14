@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for archive in site.archives %}
+{% if archive.type == "month" %}
+  <li class="{% unless forloop.index == 1 %} border-t {% endunless %} pt-3.5 pb-1.5">
+    <p class="mb-1">
+      <a
+        class="dark-grey-text"
+        href="{{ archive.url | prepend: site.baseurl }}">
+        {{ archive.date | date: "%B %Y" }}
+      </a>
+    </p>
+  </li>
+{% endif %}
+{% endfor %}

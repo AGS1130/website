@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@import './templates/home.css';
+@tailwind base;
+@tailwind components;
+
+strong,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  @apply text-lightShade
+}
+
+/* purgecss end ignore */
+
+@tailwind utilities;
